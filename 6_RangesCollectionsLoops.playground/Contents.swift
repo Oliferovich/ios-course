@@ -352,9 +352,9 @@ print (wordCheck(word: "swift", line: "swift swift"))
 
 // 2. Написать алгоритм с помощью цикла DO-WHILE который добавляет в массив [Int] элементы (можно одинаковые, можно рандомные) до тех пор, пока сумма элементов массива меньше 100
 
-var mass: [Int] = [2,4,6,2,6,]
+var mass: [Int] = [2,4,6,2,6]
 
-print(mass.reduce(0, +))
+//print(mass.reduce(0, +))
 
 repeat {
     
@@ -363,10 +363,12 @@ repeat {
     mass.append(number)
 
 } while
-mass.reduce(0,+) < 100
+    mass.reduce(0,+) < 100
 
 print(mass)
 print(mass.count)
+print(mass.reduce(0, +))
+a
 
 // 3. Написать 1 алгоритм сортировки элементов массива [Int]
 
@@ -378,3 +380,4 @@ for i in 0 ..< mass.count {
     }
 }
 print(mass)
+
